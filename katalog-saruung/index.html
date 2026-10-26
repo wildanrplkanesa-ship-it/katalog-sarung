@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Sarung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a class="logo" href="index.html">
+                <img class="logo-icon" src="img/cuking lucu.jpg" alt="">
+                <span>Katalog Sarung</span>
+            </a>
+            <div class="cart">Keranjang: <span id="cartCount">0</span></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p class="small-title">KOLEKSI PILIHAN</p>
+            <h1>Katalog Sarung</h1>
+            <p>Pilih sarung favoritmu untuk dipakai sehari-hari atau dijadikan hadiah.</p>
+        </section>
+
+        <section class="catalog" aria-label="Daftar produk sarung">
+            <div class="catalog-heading">
+                <h2>Semua produk</h2>
+                <label class="search-label" for="searchInput">Cari produk</label>
+                <input id="searchInput" type="search" placeholder="Contoh: Wadimor" autocomplete="off">
+            </div>
+            <div id="productList" class="product-list"></div>
+            <p id="emptyMessage" class="empty-message" hidden>Produk tidak ditemukan.</p>
+        </section>
+    </main>
+
+    <dialog id="productDialog" class="product-dialog">
+        <div class="dialog-heading">
+            <h2 id="dialogTitle"></h2>
+            <button id="closeDialog" class="close-dialog" type="button" aria-label="Tutup">&times;</button>
+        </div>
+        <p id="dialogDescription" class="description"></p>
+        <p class="material"><strong>Bahan:</strong> Kain tenun; komposisi serat mengikuti label produk.</p>
+        <button id="dialogBuyButton" class="buy-button" type="button">Tambah ke keranjang</button>
+    </dialog>
+
+    <footer class="footer">
+        <p>&copy; 2026 Toko Sarung</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/_wildannafa/" target="_blank" rel="noopener noreferrer">Instagram: @wildannafa</a>
+            <a href="https://wa.me/6287769684592?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20sarung." target="_blank" rel="noopener noreferrer">WhatsApp: 0877-6968-4592</a>
+        </div>
+    </footer>
+</body>
+</html>
